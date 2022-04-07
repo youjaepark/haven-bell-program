@@ -6,6 +6,8 @@ window.title("School Bell")
 window.geometry('800x600')
 window.mainloop()
 
+print ("환호가")
+
 #----------- 이줄 위에는 환호 --------------
 
 
