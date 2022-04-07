@@ -15,6 +15,6 @@
 
 
 #------------- 이줄 위에는 유재 -------------
-print("hello world")
+print("아무거나")
 =======
 >>>>>>> Stashed changes
