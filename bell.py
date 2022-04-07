@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 
@@ -14,3 +15,6 @@
 
 
 #------------- 이줄 위에는 유재 -------------
+print("hello world")
+=======
+>>>>>>> Stashed changes
