@@ -1,6 +1,12 @@
-<<<<<<< Updated upstream
 
 
+from tkinter import *
+
+window = Tk()
+
+window.title("Gomming's Automation Tool")
+
+window.mainloop()
 
 #----------- 이줄 위에는 환호 --------------
 
@@ -16,5 +22,4 @@
 
 #------------- 이줄 위에는 유재 -------------
 print("hello world")
-=======
->>>>>>> Stashed changes
+
