@@ -16,6 +16,6 @@ window.mainloop()
 
 
 
-
+print("코딩 연습")
 print("hello")
 #------------- 이줄 위에는 유재 ------------
