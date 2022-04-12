@@ -18,27 +18,21 @@ window.mainloop()
 
 #----------- 이줄 위에는 환호 --------------
 
-
-from datetime import datetime
 import schedule
 import time
-
-now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
-print(current_time)
  
-
-
 def job():
-    print("자연, 우리의 미래...")
-
-# 매일 특정 HH:MM 및 다음 HH:MM:SS에 작업 실행
-schedule.every().day.at("2:00").do(job)
-schedule.every().day.at("2:00:42").do(job)
+    print("I'm working...")
+schedule.every().monday.at("13:44").do(job)
+schedule.every().tuesday.at("13:449","13:49").do(job)
+schedule.every().wednesday.at("13:44").do(job)
+schedule.every().thursday.at("13:44").do(job)
+schedule.every().friday.at("13:44").do(job)
 
 while True:
     schedule.run_pending()
     time.sleep(1)
+
 
 
 
