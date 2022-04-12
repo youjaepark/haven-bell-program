@@ -7,16 +7,16 @@ window = Tk()
 window.title("School Bell")
 window.geometry('800x600')
 
-point = 1
+point = "normal"
 
 def first(): 
-    point = 1
+    point = "normal"
     print(point)
     Label1 = Label(window, background='green')
     Label1.pack()
 
 def second():
-    point = 2
+    point = "exam"
     print(point)
     btn1['bg'] = 'white'
     btn2['bg'] = 'green'
