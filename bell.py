@@ -1,7 +1,21 @@
 from calendar import TUESDAY
 from cgitb import text
+
 from tkinter import *
+
+from operator import truediv
+from re import A
+from tkinter import *
+
 from tracemalloc import start
+
+import tkinter.font
+
+import schedule
+import time
+import datetime
+
+
 #from winsound import PlaySound
 window = Tk()
 window.title("School Bell")
@@ -9,23 +23,61 @@ window.geometry('800x600')
 
 point = "normal"
 
+
 def first(): 
     point = "normal"
     print(point)
     Label1 = Label(window, background='green')
     Label1.pack()
 
+font=tkinter.font.Font(family="맑은 고딕", size=25, slant="italic")
+labeltext = Label(window, text = "평일 벨소리", font=font)
+labeltext.pack(side="top", pady=30)
+
+labeltexttime = Label(window, text = datetime.datetime.now(), font=font)
+labeltexttime.pack(side="bottom", pady=30)
+
+
+def first(): 
+    point = "normal"
+    print(point)
+    labeltext.config(text="평일 벨소리")
+    labeltext.pack()
+
+
 def second():
     point = "exam"
     print(point)
+
     btn1['bg'] = 'white'
     btn2['bg'] = 'green'
+
+    labeltext.config(text="시험 벨소리")
+    labeltext.pack()
+
+
+
+
+if (True):
+  labeltexttime.config(text=datetime.datetime.now())
+  labeltexttime.pack()
+
+
+
+
+
 
 btn1 = Button(window, text="평일 벨소리", width=30, height=15, command=first)
 btn1.pack(side="left", padx=50)
 
+
 btn2 = Button(window, text="시험 벨소리", width=30, height=15, command= second)
 btn2.pack(side="right", padx=50)
+
+
+btn2 = Button(window, text="시험 벨소리", width=30, height=15, command=second)
+btn2.pack(side="right", padx=50)
+
 
 window.mainloop()
 
@@ -171,6 +223,10 @@ while True:
 
 
 #------------- 이줄 위에는 주환 -------------
+
+
+#import playsound
+#playsound.playsound('sample.mp3')
 
 
 
