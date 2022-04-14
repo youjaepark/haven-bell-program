@@ -20,13 +20,6 @@ window.geometry('800x600')
 
 point = "normal"
 
-
-def first(): 
-    point = "normal"
-    print(point)
-    Label1 = Label(window, background='green')
-    Label1.pack()
-
 font=tkinter.font.Font(family="맑은 고딕", size=25, slant="italic")
 labeltext = Label(window, text = "평일 벨소리", font=font)
 labeltext.pack(side="top", pady=30)
@@ -45,21 +38,11 @@ def first():
 def second():
     point = "exam"
     print(point)
-
-    btn1['bg'] = 'white'
-    btn2['bg'] = 'green'
-
     labeltext.config(text="시험 벨소리")
     labeltext.pack()
 
 
-
-
-if (True):
-  labeltexttime.config(text=datetime.datetime.now())
-  labeltexttime.pack()
-
-
+  
 
 
 
@@ -76,6 +59,17 @@ btn2 = Button(window, text="시험 벨소리", width=30, height=15, command=seco
 btn2.pack(side="right", padx=50)
 
 
+
+
+def reset():
+  a = datetime.datetime.now()
+  print(a)
+  labeltexttime.config(text=a)
+  labeltexttime.pack()
+
+schedule.every(1).seconds.do(reset)
+schedule.run_all
+
 window.mainloop()
 
 
@@ -83,8 +77,7 @@ window.mainloop()
 
 
 
-import schedule
-import time
+
 
  
 if point():
@@ -227,8 +220,8 @@ while True:
 #------------- 이줄 위에는 주환 -------------
 
 
-#import playsound
-#playsound.playsound('sample.mp3')
+import playsound
+playsound.playsound('sample.mp3')
 
 
 
