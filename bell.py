@@ -1,5 +1,3 @@
-
-
 from calendar import TUESDAY
 from cgitb import text
 from tkinter import *
