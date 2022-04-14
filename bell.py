@@ -220,8 +220,8 @@ while True:
 #------------- 이줄 위에는 주환 -------------
 
 
-import playsound
-playsound.playsound('sample.mp3')
+#import playsound
+#playsound.playsound('sample.mp3')
 
 
 
