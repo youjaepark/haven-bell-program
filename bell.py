@@ -16,6 +16,7 @@ import time
 import datetime
 
 
+
 #from winsound import PlaySound
 window = Tk()
 window.title("School Bell")
@@ -27,8 +28,8 @@ font=tkinter.font.Font(family="맑은 고딕", size=25, slant="italic")
 labeltext = Label(window, text = "평일 벨소리", font=font)
 labeltext.pack(side="top", pady=30)
 
-labeltexttime = Label(window, text = datetime.datetime.now(), font=font)
-labeltexttime.pack(side="bottom", pady=30)
+#labeltexttime = Label(window, text = datetime.datetime.now(), font=font)
+#labeltexttime.pack(side="bottom", pady=30)
 
 
 def first(): 
@@ -44,7 +45,7 @@ def second():
     labeltext.config(text="시험 벨소리")
     labeltext.pack()
   
-print()
+
 
 
 
@@ -63,14 +64,12 @@ btn2.pack(side="right", padx=50)
 
 
 
-def reset():
-  a = datetime.datetime.now()
-  print(a)
-  labeltexttime.config(text=a)
-  labeltexttime.pack()
+#def reset():
+ # a = datetime.datetime.now()
+ # print(a)
+ # labeltexttime.config(text=a)
+ # labeltexttime.pack()
 
-schedule.every(1).seconds.do(reset)
-schedule.run_all
 
 window.mainloop()
 
