@@ -177,7 +177,6 @@ while True:
 
 #------------- 이줄 위에는 주환 -------------
 
-#import playsound
-#playsound.playsound('sample.mp3')
-
+from playsound import playsound 
+playsound(r'C:\Users\qkrdb\OneDrive\바탕 화면\music.mp3')
 #------------- 이줄 위에는 유재 ------------
