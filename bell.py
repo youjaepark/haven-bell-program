@@ -217,11 +217,16 @@ while True:
 
 #------------- 이줄 위에는 주환 -------------
 
-
 from playsound import playsound 
+
 playsound(r'C:\Users\qkrdb\OneDrive\바탕 화면\music.mp3')
 
 playsound ('music.mp3')
+
+playsound ('bell1.mp3')
+
+playsound ('bell2.mp3')
+
 
 
 #------------- 이줄 위에는 유재 ------------
