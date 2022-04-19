@@ -218,9 +218,10 @@ while True:
 
 #------------- 이줄 위에는 주환 -------------
 
-
 from playsound import playsound 
-playsound ('music.mp3')
+playsound ('bell1.mp3')
+
+playsound ('bell2.mp3')
 
 #------------- 이줄 위에는 유재 ------------
 
