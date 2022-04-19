@@ -1,5 +1,4 @@
-
-
+from calendar import TUESDAY
 from cgitb import text
 
 from tkinter import *
@@ -7,11 +6,15 @@ from tkinter import *
 from operator import truediv
 from re import A
 from tkinter import *
+
+from tracemalloc import start
+
 import tkinter.font
 
 import schedule
 import time
 import datetime
+
 
 #from winsound import PlaySound
 window = Tk()
@@ -75,77 +78,77 @@ window.mainloop()
 
 #----------- 이줄 위에는 환호 --------------
 
-
-
-
+import schedule
+import time
+import datetime
 
  
-if point():
+if first():
  schedule.run_pending
-schedule.every().monday.at("8:40").do(point)
-schedule.every().monday.at("8:50").do(point)
+schedule.every().monday.at("8:40").do(first)
+schedule.every().monday.at("8:50").do(first)
 
-schedule.every().monday.at("8:55").do(point)
-schedule.every().monday.at("9:25").do(point)
+schedule.every().monday.at("8:55").do(first)
+schedule.every().monday.at("9:25").do(first)
 
-schedule.every().monday.at("9:30").do(point)
-schedule.every().monday.at("10:20").do(point)
+schedule.every().monday.at("9:30").do(first)
+schedule.every().monday.at("10:20").do(first)
 
-schedule.every().monday.at("10:30").do(point)
-schedule.every().monday.at("11:20").do(point)
+schedule.every().monday.at("10:30").do(first)
+schedule.every().monday.at("11:20").do(first)
 
-schedule.every().monday.at("11:30").do(point)
-schedule.every().monday.at("12:20").do(point)
+schedule.every().monday.at("11:30").do(first)
+schedule.every().monday.at("12:20").do(first)
 
-schedule.every().monday.at("13:10").do(point)
-schedule.every().monday.at("14:00").do(point)
+schedule.every().monday.at("13:10").do(first)
+schedule.every().monday.at("14:00").do(first)
 
-schedule.every().monday.at("14:10").do(point)
-schedule.every().monday.at("15:00").do(point)
+schedule.every().monday.at("14:10").do(first)
+schedule.every().monday.at("15:00").do(first)
 
-schedule.every().monday.at("15:10").do(point)
-schedule.every().monday.at("16:00").do(point)
+schedule.every().monday.at("15:10").do(first)
+schedule.every().monday.at("16:00").do(first)
 #----------------------------------------------
-schedule.every().tuesday.at("8:40").do(point)
-schedule.every().tuesday.at("8:50").do(point)
+schedule.every().tuesday.at("8:40").do(first)
+schedule.every().tuesday.at("8:50").do(first)
 
-schedule.every().tuesday.at("8:55").do(point)
-schedule.every().tuesday.at("9:25").do(point)
+schedule.every().tuesday.at("8:55").do(first)
+schedule.every().tuesday.at("9:25").do(first)
 
-schedule.every().tuesday.at("9:30").do(point)
-schedule.every().tuesday.at("10:20").do(point)
+schedule.every().tuesday.at("9:30").do(first)
+schedule.every().tuesday.at("10:20").do(first)
 
-schedule.every().tuesday.at("10:30").do(point)
-schedule.every().tuesday.at("11:20").do(point)
+schedule.every().tuesday.at("10:30").do(first)
+schedule.every().tuesday.at("11:20").do(first)
 
-schedule.every().tuesday.at("11:30").do(point)
-schedule.every().tuesday.at("12:20").do(point)
+schedule.every().tuesday.at("11:30").do(first)
+schedule.every().tuesday.at("12:20").do(first)
 
-schedule.every().tuesday.at("13:05").do(point)
-schedule.every().tuesday.at("13:55").do(point)
+schedule.every().tuesday.at("13:05").do(first)
+schedule.every().tuesday.at("13:55").do(first)
 
-schedule.every().tuesday.at("14:00").do(point)
-schedule.every().tuesday.at("14:50").do(point)
+schedule.every().tuesday.at("14:00").do(first)
+schedule.every().tuesday.at("14:50").do(first)
 
-schedule.every().tuesday.at("12:50").do(point)
-schedule.every().tuesday.at("15:10").do(point)
+schedule.every().tuesday.at("12:50").do(first)
+schedule.every().tuesday.at("15:10").do(first)
 
-schedule.every().tuesday.at("15:10").do(point)
-schedule.every().tuesday.at("16:20").do(point)
+schedule.every().tuesday.at("15:10").do(first)
+schedule.every().tuesday.at("16:20").do(first)
 #----------------------------------------------
-schedule.every().wednesday.at("8:40").do(point)
-schedule.every().wednesday.at("8:50").do(point)
+schedule.every().wednesday.at("8:40").do(first)
+schedule.every().wednesday.at("8:50").do(first)
 
-schedule.every().wednesday.at("8:55").do(point)
-schedule.every().wednesday.at("9:25").do(point)
+schedule.every().wednesday.at("8:55").do(first)
+schedule.every().wednesday.at("9:25").do(first)
 
-schedule.every().wednesday.at("9:30").do(point)
-schedule.every().wednesday.at("10:20").do(point)
+schedule.every().wednesday.at("9:30").do(first)
+schedule.every().wednesday.at("10:20").do(first)
 
-schedule.every().wednesday.at("10:30").do(point)
-schedule.every().wednesday.at("11:20").do(point)
+schedule.every().wednesday.at("10:30").do(first)
+schedule.every().wednesday.at("11:20").do(first)
 
-schedule.every().wednesday.at("11:30").do(point)
+schedule.every().wednesday.at("11:30").do(first)
 schedule.every().wednesday.at("12:20").do(point)
 
 schedule.every().wednesday.at("13:10").do(point)
@@ -203,9 +206,6 @@ schedule.every().friday.at("15:00").do(point)
 
 schedule.every().friday.at("15:10").do(point)
 schedule.every().friday.at("16:00").do(point)
-
-if second():
-  schedule.run_all
 
 
 
