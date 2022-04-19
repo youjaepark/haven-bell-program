@@ -44,6 +44,7 @@ def second():
     labeltext.config(text="시험 벨소리")
     labeltext.pack()
   
+print()
 
 
 
