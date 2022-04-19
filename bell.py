@@ -221,10 +221,11 @@ while True:
 from playsound import playsound 
 playsound(r'C:\Users\qkrdb\OneDrive\바탕 화면\music.mp3')
 
+playsound ('music.mp3')
+
+
 #------------- 이줄 위에는 유재 ------------
 
-from playsound import playsound 
-playsound(r'C:\Users\qkrdb\OneDrive\바탕 화면\music.mp3')
 
 #------------- 이줄 위에는 유재 ------------
 
