@@ -218,10 +218,20 @@ while True:
 
 #------------- 이줄 위에는 주환 -------------
 
-from playsound import playsound 
-playsound ('bell1.mp3')
+from pygame import mixer
+import time
+mixer.init()
 
-playsound ('bell2.mp3')
+mixer.music.load("bell1.mp3") #음악 1 재생
+mixer.music.play()
+time.sleep(9)
+mixer.music.stop()
+
+mixer.music.load("bell2.mp3") #음악 2 재생
+mixer.music.play()
+time.sleep(13)
+mixer.music.stop()
+
 
 #------------- 이줄 위에는 유재 ------------
 
