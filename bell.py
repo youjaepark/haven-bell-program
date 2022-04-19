@@ -43,9 +43,8 @@ def second():
     print(point)
     labeltext.config(text="시험 벨소리")
     labeltext.pack()
-
-
   
+print()
 
 
 
@@ -225,3 +224,9 @@ import playsound
 playsound(r'C:\Users\qkrdb\OneDrive\바탕 화면\music.mp3')
 
 #------------- 이줄 위에는 유재 ------------
+
+from playsound import playsound 
+playsound(r'C:\Users\qkrdb\OneDrive\바탕 화면\music.mp3')
+
+#------------- 이줄 위에는 유재 ------------
+
