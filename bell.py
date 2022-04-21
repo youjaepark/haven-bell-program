@@ -17,9 +17,27 @@ import schedule
 import time
 import datetime
 
+from pygame import mixer
+import time
+mixer.init()
+def p1():
+    mixer.music.load("bell1.mp3") #음악 1 재생
+    mixer.music.play()
+    time.sleep(9)
+    mixer.music.stop()
+    
+p1() #음악 1 재생 함수
+
+def p2():
+    mixer.music.load("bell2.mp3") #음악 2 재생
+    mixer.music.play()
+    time.sleep(13)
+    mixer.music.stop()
+
+p2() #음악 2 재생 함수
 
 
-#from winsound import PlaySound
+
 window = Tk()
 window.title("School Bell")
 window.geometry('800x600')
@@ -29,9 +47,6 @@ point = "normal"
 font=tkinter.font.Font(family="맑은 고딕", size=25, slant="italic")
 labeltext = Label(window, text = "평일 벨소리", font=font)
 labeltext.pack(side="top", pady=30)
-
-#labeltexttime = Label(window, text = datetime.datetime.now(), font=font)
-#labeltexttime.pack(side="bottom", pady=30)
 
 
 def first(): 
@@ -62,26 +77,18 @@ btn2.pack(side="right", padx=50)
 
 
 
-
-#def reset():
- # a = datetime.datetime.now()
- # print(a)
- # labeltexttime.config(text=a)
- # labeltexttime.pack()
-
-
 window.mainloop()
 
-
-#----------- 이줄 위에는 환호 --------------
-
-import schedule
-import time
-import datetime
 
 
 def job():
     print("스케쥴 실행중...")
+
+
+
+def job():
+    print("스케쥴 실행중...")
+
 
 if "exam"():
     schedule.every().at("20:18").do(job)
@@ -89,6 +96,7 @@ if "exam"():
 while True:
     schedule.run_pending()
     time.sleep(1)
+
 
 
 
