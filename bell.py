@@ -100,39 +100,3 @@ while True:
 
 
 
-
-
-
-
-#------------- 이줄 위에는 주환 -------------
-from pygame import mixer
-import time
-mixer.init()
-
-mixer.music.load("bell1.mp3") #음악 1 재생
-mixer.music.play()
-time.sleep(9)
-mixer.music.stop()
-
-mixer.music.load("bell2.mp3") #음악 2 재생
-mixer.music.play()
-time.sleep(13)
-mixer.music.stop()
-def p1():
-    mixer.music.load("bell1.mp3") #음악 1 재생
-    mixer.music.play()
-    time.sleep(9)
-    mixer.music.stop()
-    
-p1() #음악 1 재생 함수
-
-def p2():
-    mixer.music.load("bell2.mp3") #음악 2 재생
-    mixer.music.play()
-    time.sleep(13)
-    mixer.music.stop()
-
-p2() #음악 2 재생 함수
-
-
-#------------- 이줄 위에는 유재 ------------
