@@ -87,7 +87,7 @@ import datetime
 if first():
  schedule.run_pending
 schedule.every().monday.at("8:40").do(first)
-schedule.every().monday.at("8:50").do(first)
+schedule.every().monday.at("8:50").do(first) 
 
 schedule.every().monday.at("8:55").do(first)
 schedule.every().monday.at("9:25").do(first)
@@ -208,6 +208,12 @@ schedule.every().friday.at("15:00").do(point)
 schedule.every().friday.at("15:10").do(point)
 schedule.every().friday.at("16:00").do(point)
 
+def exit():
+    print("function exit")
+    sys.exit()
+
+
+schedule.every().day.at("12:00").do(exit)
 
 
 if second():
