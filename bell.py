@@ -79,31 +79,11 @@ btn2.pack(side="right", padx=50)
 
 window.mainloop()
 
-
-
-def job():
-    print("스케쥴 실행중...")
-
-
-
-def job():
-    print("스케쥴 실행중...")
-
-
-if "exam"():
-    schedule.every().at("20:18").do(job)
- 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
-
 import schedule
 import time
 import datetime
 
 
-def job():
-    print("스케쥴 실행중...")
 if first():
  schedule.run_pending
 schedule.every().monday.at("8:40").do(first)
