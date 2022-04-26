@@ -26,7 +26,7 @@ def p1():
     time.sleep(9)
     mixer.music.stop()
     
-p1() #음악 1 재생 함수
+ #음악 1 재생 함수
 
 def p2():
     mixer.music.load("bell2.mp3") #음악 2 재생
@@ -34,7 +34,7 @@ def p2():
     time.sleep(13)
     mixer.music.stop()
 
-p2() #음악 2 재생 함수
+ #음악 2 재생 함수
 
 
 
@@ -221,6 +221,6 @@ if second():
  
 while True:
     schedule.run_pending()
-    time.sleep(1)
+   
 
 
