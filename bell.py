@@ -2,7 +2,7 @@ from calendar import TUESDAY
 from cgitb import text
 
 from tkinter import *
-
+import threading
 from operator import truediv
 from re import A
 from tkinter import *
@@ -77,9 +77,6 @@ btn2.pack(side="right", padx=50)
 
 btn2 = Button(window, text="시험 벨소리", width=30, height=15, command=second)
 btn2.pack(side="right", padx=50)
-
-
-window.mainloop()
 
 
 import schedule
@@ -210,7 +207,21 @@ schedule.every().friday.at("15:00").do(p2)
 schedule.every().friday.at("15:10").do(p1)
 schedule.every().friday.at("16:00").do(p2)
 
+class alpha:
 
+    def window_mainloop():
+    window.mainloop()
+
+    def schedule_loop():
     while True:
-        print("안녕하세요")
-        self.sleep(1)
+        schedule.run_pending()
+        time.sleep(1)
+
+t1= threading.Thread(target=window_mainloop)
+t2= threading.Thread(target=schedule_loop)
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
