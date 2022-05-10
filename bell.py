@@ -1,4 +1,3 @@
-
 from calendar import TUESDAY
 from cgitb import text
 
@@ -19,7 +18,11 @@ import datetime
 
 from pygame import mixer
 import time
+
+
+
 mixer.init()
+
 def p1():
     mixer.music.load("bell1.mp3") #음악 1 재생
     mixer.music.play()
@@ -76,151 +79,138 @@ btn2 = Button(window, text="시험 벨소리", width=30, height=15, command=seco
 btn2.pack(side="right", padx=50)
 
 
-
 window.mainloop()
+
 
 import schedule
 import time
 import datetime
 
+schedule.every().monday.at("08:40").do(p1)
+schedule.every().monday.at("08:50").do(p2)
 
-if first():
- schedule.run_pending
-schedule.every().monday.at("8:40").do(first)
-schedule.every().monday.at("8:50").do(first) 
+schedule.every().monday.at("08:55").do(p1)
+schedule.every().monday.at("09:25").do(p2)
 
-schedule.every().monday.at("8:55").do(first)
-schedule.every().monday.at("9:25").do(first)
+schedule.every().monday.at("09:30").do(p1)
+schedule.every().monday.at("10:20").do(p2)
 
-schedule.every().monday.at("9:30").do(first)
-schedule.every().monday.at("10:20").do(first)
+schedule.every().monday.at("10:30").do(p1)
+schedule.every().monday.at("11:20").do(p2)
 
-schedule.every().monday.at("10:30").do(first)
-schedule.every().monday.at("11:20").do(first)
+schedule.every().monday.at("11:30").do(p1)
+schedule.every().monday.at("12:20").do(p2)
 
-schedule.every().monday.at("11:30").do(first)
-schedule.every().monday.at("12:20").do(first)
+schedule.every().monday.at("13:10").do(p1)
+schedule.every().monday.at("14:00").do(p2)
 
-schedule.every().monday.at("13:10").do(first)
-schedule.every().monday.at("14:00").do(first)
+schedule.every().monday.at("14:10").do(p1)
+schedule.every().monday.at("15:00").do(p2)
 
-schedule.every().monday.at("14:10").do(first)
-schedule.every().monday.at("15:00").do(first)
+schedule.every().monday.at("15:10").do(p1)
+schedule.every().monday.at("16:00").do(p2)
 
-schedule.every().monday.at("15:10").do(first)
-schedule.every().monday.at("16:00").do(first)
 #----------------------------------------------
-schedule.every().tuesday.at("8:40").do(first)
-schedule.every().tuesday.at("8:50").do(first)
+schedule.every().tuesday.at("08:40").do(p1)
+schedule.every().tuesday.at("08:50").do(p2)
 
-schedule.every().tuesday.at("8:55").do(first)
-schedule.every().tuesday.at("9:25").do(first)
+schedule.every().tuesday.at("08:55").do(p1)
+schedule.every().tuesday.at("09:25").do(p2)
 
-schedule.every().tuesday.at("9:30").do(first)
-schedule.every().tuesday.at("10:20").do(first)
+schedule.every().tuesday.at("09:30").do(p1)
+schedule.every().tuesday.at("10:20").do(p2)
 
-schedule.every().tuesday.at("10:30").do(first)
-schedule.every().tuesday.at("11:20").do(first)
+schedule.every().tuesday.at("10:30").do(p1)
+schedule.every().tuesday.at("11:20").do(p2)
 
-schedule.every().tuesday.at("11:30").do(first)
-schedule.every().tuesday.at("12:20").do(first)
+schedule.every().tuesday.at("11:30").do(p1)
+schedule.every().tuesday.at("12:20").do(p2)
 
-schedule.every().tuesday.at("13:05").do(first)
-schedule.every().tuesday.at("13:55").do(first)
+schedule.every().tuesday.at("13:36").do(p1)
+schedule.every().tuesday.at("13:37").do(p2)
 
-schedule.every().tuesday.at("14:00").do(first)
-schedule.every().tuesday.at("14:50").do(first)
+schedule.every().tuesday.at("14:00").do(p1)
+schedule.every().tuesday.at("14:50").do(p2)
 
-schedule.every().tuesday.at("12:50").do(first)
-schedule.every().tuesday.at("15:10").do(first)
+schedule.every().tuesday.at("12:50").do(p1)
+schedule.every().tuesday.at("15:10").do(p2)
 
-schedule.every().tuesday.at("15:10").do(first)
-schedule.every().tuesday.at("16:20").do(first)
+schedule.every().tuesday.at("15:10").do(p1)
+schedule.every().tuesday.at("16:20").do(p2)
 #----------------------------------------------
-schedule.every().wednesday.at("8:40").do(first)
-schedule.every().wednesday.at("8:50").do(first)
+schedule.every().wednesday.at("08:40").do(p1)
+schedule.every().wednesday.at("08:50").do(p2)
 
-schedule.every().wednesday.at("8:55").do(first)
-schedule.every().wednesday.at("9:25").do(first)
+schedule.every().wednesday.at("08:55").do(p1)
+schedule.every().wednesday.at("09:25").do(p2)
 
-schedule.every().wednesday.at("9:30").do(first)
-schedule.every().wednesday.at("10:20").do(first)
+schedule.every().wednesday.at("09:30").do(p1)
+schedule.every().wednesday.at("10:20").do(p2)
 
-schedule.every().wednesday.at("10:30").do(first)
-schedule.every().wednesday.at("11:20").do(first)
+schedule.every().wednesday.at("10:30").do(p1)
+schedule.every().wednesday.at("11:20").do(p2)
 
-schedule.every().wednesday.at("11:30").do(first)
-schedule.every().wednesday.at("12:20").do(point)
+schedule.every().wednesday.at("11:30").do(p1)
+schedule.every().wednesday.at("12:20").do(p2)
 
-schedule.every().wednesday.at("13:10").do(point)
-schedule.every().wednesday.at("14:00").do(point)
+schedule.every().wednesday.at("13:10").do(p1)
+schedule.every().wednesday.at("14:00").do(p2)
 
-schedule.every().wednesday.at("14:10").do(point)
-schedule.every().wednesday.at("15:00").do(point)
+schedule.every().wednesday.at("14:10").do(p1)
+schedule.every().wednesday.at("15:00").do(p2)
 
-schedule.every().wednesday.at("15:10").do(point)
-schedule.every().wednesday.at("16:00").do(point)
+schedule.every().wednesday.at("15:10").do(p1)
+schedule.every().wednesday.at("16:00").do(p2)
 #----------------------------------------------
-schedule.every().thursday.at("8:40").do(point)
-schedule.every().thursday.at("8:50").do(point)
+schedule.every().thursday.at("08:40").do(p1)
+schedule.every().thursday.at("08:50").do(p2)
 
-schedule.every().thursday.at("8:55").do(point)
-schedule.every().thursday.at("9:25").do(point)
+schedule.every().thursday.at("08:55").do(p1)
+schedule.every().thursday.at("09:25").do(p2)
 
-schedule.every().thursday.at("9:30").do(point)
-schedule.every().thursday.at("10:20").do(point)
+schedule.every().thursday.at("09:30").do(p1)
+schedule.every().thursday.at("10:20").do(p2)
 
-schedule.every().thursday.at("10:30").do(point)
-schedule.every().thursday.at("11:20").do(point)
+schedule.every().thursday.at("10:30").do(p1)
+schedule.every().thursday.at("11:20").do(p2)
 
-schedule.every().thursday.at("11:30").do(point)
-schedule.every().thursday.at("12:20").do(point)
+schedule.every().thursday.at("11:30").do(p1)
+schedule.every().thursday.at("12:20").do(p2)
 
-schedule.every().thursday.at("13:10").do(point)
-schedule.every().thursday.at("14:00").do(point)
+schedule.every().thursday.at("13:10").do(p1)
+schedule.every().thursday.at("14:00").do(p2)
 
-schedule.every().thursday.at("14:10").do(point)
-schedule.every().thursday.at("15:00").do(point)
+schedule.every().thursday.at("14:10").do(p1)
+schedule.every().thursday.at("15:00").do(p2)
 
-schedule.every().thursday.at("15:10").do(point)
-schedule.every().thursday.at("16:00").do(point)
+schedule.every().thursday.at("15:10").do(p1)
+schedule.every().thursday.at("16:00").do(p2)
 #-------------------------------------------------
-schedule.every().friday.at("8:40").do(point)
-schedule.every().friday.at("8:50").do(point)
+schedule.every().friday.at("08:40").do(p1)
+schedule.every().friday.at("08:50").do(p2)
 
-schedule.every().friday.at("8:55").do(point)
-schedule.every().friday.at("9:25").do(point)
-schedule.every().friday.at("9:30").do(point)
-schedule.every().friday.at("10:20").do(point)
+schedule.every().friday.at("08:55").do(p1)
+schedule.every().friday.at("09:25").do(p2)
 
-schedule.every().friday.at("10:30").do(point)
-schedule.every().friday.at("11:20").do(point)
+schedule.every().friday.at("09:30").do(p1)
+schedule.every().friday.at("10:20").do(p2)
 
-schedule.every().friday.at("11:30").do(point)
-schedule.every().friday.at("12:20").do(point)
+schedule.every().friday.at("10:30").do(p1)
+schedule.every().friday.at("11:20").do(p2)
 
-schedule.every().friday.at("13:10").do(point)
-schedule.every().friday.at("14:00").do(point)
+schedule.every().friday.at("11:30").do(p1)
+schedule.every().friday.at("12:20").do(p2)
 
-schedule.every().friday.at("14:10").do(point)
-schedule.every().friday.at("15:00").do(point)
+schedule.every().friday.at("13:10").do(p1)
+schedule.every().friday.at("14:00").do(p2)
 
-schedule.every().friday.at("15:10").do(point)
-schedule.every().friday.at("16:00").do(point)
+schedule.every().friday.at("14:10").do(p1)
+schedule.every().friday.at("15:00").do(p2)
 
-def exit():
-    print("function exit")
-    sys.exit()
+schedule.every().friday.at("15:10").do(p1)
+schedule.every().friday.at("16:00").do(p2)
 
 
-schedule.every().day.at("12:00").do(exit)
-
-
-if second():
-    schedule.every().at("20:18").do(job)
- 
-while True:
-    schedule.run_pending()
-   
-
-
+    while True:
+        print("안녕하세요")
+        self.sleep(1)
