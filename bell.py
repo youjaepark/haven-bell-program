@@ -1,21 +1,15 @@
 from calendar import TUESDAY
 from cgitb import text
-
 from tkinter import *
 import threading
 from operator import truediv
 from re import A
-from tkinter import *
-
 from tracemalloc import start
-
 import tkinter.font
 from xml.dom import pulldom
-
 import schedule
 import time
 import datetime
-
 from pygame import mixer
 import time
 
